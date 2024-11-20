@@ -1,0 +1,9 @@
+on:
+  schedule: '*/2 * * * *'
+
+jobs:
+  name-of-the-job:
+    runs-on: ubunut-latest
+    steps:
+      - name: step 1
+        run: "The current server time is $(date)."
