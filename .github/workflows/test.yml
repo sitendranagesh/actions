@@ -14,5 +14,5 @@ jobs:
     steps:
       - name: first step
         shell: bash
-        run: echo "first step"
+        run: sitendra "first step"
       
