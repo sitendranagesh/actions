@@ -1,0 +1,22 @@
+# name: My Test Workflow
+
+# on:
+#   push:
+#   issues:
+
+# jobs:
+#   test-example:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Run a simple command
+#         run: echo "Hello, world!"
+
+name: My Test Workflow
+on: [push, issues]
+
+jobs:
+  test-example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a simple command
+        run: echo "This is a test example."
