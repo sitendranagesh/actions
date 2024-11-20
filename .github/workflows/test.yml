@@ -1,0 +1,18 @@
+# Steps to write a typical action
+
+# on -> event definition
+# jobs -> name of the job with an indentation -> steps + runner details with indentantion -> indentation step 1 list with name & shell type & run on 
+
+name: a test github action script
+on:
+ - push
+ - issues
+
+jobs:
+  my-job-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first step
+        shell: bash
+        run: echo "first step"
+      
