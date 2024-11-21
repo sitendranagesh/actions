@@ -1,0 +1,22 @@
+name: Work flow example
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: macos-latest
+    
+    steps:
+      - name: set the var
+        run: |
+            echo "myenv=sitendra" >> $GITHUB_ENV
+    
+      - name: access the var
+        run: |
+            echo $myenv
+    
+      - name: printenv
+        run: printenv
