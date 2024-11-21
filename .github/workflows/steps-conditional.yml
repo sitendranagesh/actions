@@ -15,3 +15,9 @@ jobs:
         steps:
             - name: running on this steps
               run: echo "I am not in sitendra nagesh repos"
+
+    repo-name:
+        runs-on: ubuntu-latest
+        steps:
+            - name: running on this steps
+              run: echo "I am not on $(github.repository)"
