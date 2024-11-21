@@ -1,0 +1,17 @@
+name: conditional statement example
+on: [push]
+
+jobs:
+    conditional-statement:
+        if: ${{ github.repository == 'sitendrnagesh/actions' }}
+        runs-on: ubuntu-latest
+        steps:
+            - name: running on this steps
+              run: echo "I am in sitendra nagesh repos"
+        
+    conditiona-statement-2:
+        if: ${{ github.repository == 'nagesh/actions' }}
+        runs-on: ubuntu-latest
+        steps:
+            - name: running on this steps
+              run: echo "I am not in sitendra nagesh repos"
