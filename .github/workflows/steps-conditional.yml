@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
     conditional-statement:
-        if: ${{ github.repository == 'sitendrnagesh/actions' }}
+        if: github.repository == 'sitendranagesh/actions'
         runs-on: ubuntu-latest
         steps:
             - name: running on this steps
