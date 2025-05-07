@@ -1,9 +1,8 @@
 on:
   - push
-
 jobs:
   job-name-hello-world-step:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
       - name: "Print Hello World"
         shell: bash
