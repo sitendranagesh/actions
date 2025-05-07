@@ -1,0 +1,11 @@
+on:
+  push
+
+jobs:
+  job-name:
+    runs-on: ubuntu-latest # this entire job will run on ubuntu runner
+    steps:
+      - name: "Hello World Print"
+        shell: bash
+        run: |
+          echo "Hello World!"
