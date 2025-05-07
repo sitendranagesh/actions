@@ -1,0 +1,13 @@
+on:
+  - push
+
+jobs:
+  job-name-hello-world-step:
+    runs-on: ubuntu
+    steps:
+      - name: "Print Hello World"
+        shell: bash
+        run: |
+          echo "Hello World!!!!"
+          echo "Second time Hello!!!"
+          
