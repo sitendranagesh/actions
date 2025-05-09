@@ -1,0 +1,17 @@
+name: Hello World ex 001
+
+on:
+  push:
+    branches:
+      - test-001
+
+jobs:
+  hello-world-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: "Hello Step"
+        run: |
+          echo "Hello..."
+      - name: "World Step"
+        run: |
+          echo "World..."
