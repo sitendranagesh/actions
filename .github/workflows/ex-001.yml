@@ -15,4 +15,4 @@ jobs:
           echo "Hello..."
       - name: "World Step"
         run: |
-          echo "{{ env.name }}"
+          echo "${{ env.name }}"
