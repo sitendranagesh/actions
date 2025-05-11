@@ -1,0 +1,17 @@
+name: "Hello World With Inputs"
+
+on:
+  push:
+    branches:
+      - test-001
+
+env:
+  name: "Sitendra"
+
+jobs:
+  hello-world-with-inputs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Capturing input"
+        run: |
+          echo "Hello ${{env.name}}!!!"
