@@ -14,4 +14,6 @@ jobs:
     steps:
       - name: "Capturing input"
         run: |
-          echo "Hello ${{env.name}}!!!"
+          echo "Hello ${{name}}!!!"
+        with:
+          name: sitendra
